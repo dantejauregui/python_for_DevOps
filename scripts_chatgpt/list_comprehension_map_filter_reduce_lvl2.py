@@ -34,9 +34,9 @@ def mapping_digits(arr):
     # This is a nested list comprehension. It performs the following:
     # 1. Start with "for text in arr", and for each 'text' in the input list 'arr'...
     # 2. It calls our 'extractor(text)' function, which returns a list (e.g., [4, 5]).
-    # 3. It then loops through that returned list ("for char in ...")
-    # 4. It adds each individual char to the final list.
-    return [char for text in arr for char in extractor(text)]
+    # 3. It then loops through that returned list ("for num in ...")
+    # 4. It adds each individual num to the final list.
+    return [num for text in arr for num in extractor(text)]
 
 
 # Debug using "uv run python scripts_chatgpt/list_comprehension_map_filter_reduce_lvl2.py":
